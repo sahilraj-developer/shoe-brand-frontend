@@ -5,6 +5,7 @@ import UserDashboard from './pages/user/UserDashboard';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
+import AdminLogin from './pages/admin/AdminLogin';
 
 function App() {
   return (
@@ -12,14 +13,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin-login" element={<AdminLogin/>} />
 
         {/* Protected Routes */}
         <Route
           path="/admin"
           element={
-            <ProtectedRoute role="admin">
+            // <ProtectedRoute role="admin">
               <AdminDashboard />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           }
         />
         <Route

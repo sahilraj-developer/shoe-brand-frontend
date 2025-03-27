@@ -1,25 +1,10 @@
-// import React from 'react';
-  
-//   const Login = () =>  {
-// 	return (
-// 	  <div>
-//         Login
-// 	  </div>
-// 	);
-//   }
-  
-//   export default Login;
-  
-
-
-
 import { useState } from 'react'
-import  Button  from "../components/ui/Button"
-import Input from "../components/ui/Input";
-import Label from "../components/ui/Label";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../components/ui/Card";
+import  Button  from "../../components/ui/Button"
+import Input from "../../components/ui/Input";
+import Label from "../../components/ui/Label";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../../components/ui/Card";
 
-export default function Login() {
+export default function AdminLogin() {
   const [isLogin, setIsLogin] = useState(true)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
